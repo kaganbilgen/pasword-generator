@@ -1,0 +1,25 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1>Generate a</h1>
+        <h1 id="text-el">random password</h1>
+        <p>Never use an insecure password again.</p>
+        <div class="flex-el" id="genpass-el">
+            <button onclick="getPass()">Generate Passwords</button>
+            <input placeholder="Password length Max:20" type="number" id="passlen-el" min="1" max="20" maxlength="2">
+        </div>
+        <span id="alert-spn"></span>
+        <hr>
+        <div class="flex-el" id="showpass-el">
+            <span onclick="copyPass(this.id)" class="pass-el" id="passone-el"></span>
+            <span onclick="copyPass(this.id)" class="pass-el" id="passtwo-el"></span>
+        </div>
+        <div class="flex-el" id="toggle-el">
+            <button id="symbols-btn" onclick="toggleChars(this.id)">Symbols: ON</button>
+            <button id="numbers-btn" onclick="toggleChars(this.id)">Numbers: ON</button>
+        </div>
+         <script src="index.js"></script>
+    </body>
+</html>
